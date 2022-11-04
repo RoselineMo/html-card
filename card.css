@@ -1,22 +1,20 @@
-/* ✓ */
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 1px ;
-    border-radius: 50px;
+.container{
+    display: block;
+    border-radius: 20px;
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-size: 15px;
 }
 
 .cardblock {
-    
-    background-color:#e6ffff;
+    background-color:#cff0fa;
     padding: 20px;
 
 }
 
 li:before {
     content: '✔ ';   
-    margin-left: -1em;
+    margin-left: -1.2em;
     margin-right: .100em;
-    
 }
 
 ul {
@@ -26,15 +24,15 @@ ul {
    list-style-position: outside;
 }
 
-.highlights {
-    pointer-events: none;
+li {
+    margin-bottom: 1em;
 }
 
-/* #button {
-    #
-} */
+.the-pluses {
+    line-height: 25px;
+}
 
-span{
+#extensions{
     border-bottom: 2px dotted rgb(51, 51, 51); 
     cursor: pointer;
 }
@@ -42,13 +40,19 @@ span{
     background-color:#4d8cf8;
     color:#ffffff;
     padding: 12px 8px 15px 30px;
-    height: 40px ;
+    font-size: 17px;
+}
+
+h2 {
+    font-weight: 550;
+    font-size: 18px;
 }
 
 a{
     text-decoration: none;
     color: black;
 }
+
 a:hover {
     color: #4d8cf8;
 }
@@ -56,12 +60,52 @@ a:hover {
 .pricing {
     display: flex;
     justify-content: space-between;
-    width: 210px;
+    width: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h1 {
     font-weight: 500;
+    font-stretch: ultra-condensed;
     font-size: 43px;
     letter-spacing: 0.5px;
     margin: auto 2px auto 2px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #194ba2;
+}
+
+button {
+    border: 1px ;
+    border-radius: 45px;
+    color: white;
+    background-color: #4d8cf8;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    width: 160px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.features {
+    color: #707373b8;
+    font-size: 12px;
+}
+
+.highlights {
+    border: 8px solid #d2bcbc ;
+    border-radius: 20px;
+    background-color: #d2bcbc;
+    opacity: 70%;
+    font-size: 12.5px;
+    padding: auto;
+    position: relative;
+    text-align: center;
+    margin-left: 8px;
 }
