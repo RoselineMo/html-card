@@ -1,0 +1,6 @@
+@media all and (max-width: 200px) and (min-width: 100px){
+    .container{
+    margin: 0px auto;
+    padding: 0.02px;
+    }
+    }   

@@ -7,13 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="card-mediarule.css">
+    <script src="card.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="heading">
             <p>Most Popular</p>
         </div>
-        
         <div class="cardblock">    
             <div class="intro">
                 <h2>Pro</h2>
@@ -47,7 +47,9 @@
 
             <div class="dropdown">
                 <p class="dropdownbutton">ALL FEATURES</p>
-                <div>
+                
+                <div id="myDropdown" class="dropdowncontent">
+                    <div>
                     <p class="features">FUNDAMENTALS</p>
                     <ul>
                         <li>Unlimited bases</li>
@@ -59,77 +61,86 @@
                         <li>Web, desktop, iOS, and Android apps</li>
                         <li>Realtime collaboration and commenting</li>
                     </ul>
-                </div>
+                    </div>
 
-                <div>
-                    <p class="features">VIEWS</p>
-                    <ul>
-                        <li>Grid, calendar, form, kanban, and gallery views</li>
-                        <li>Gantt view</li>
-                        <li>Timeline view <span class="highlights">NEW</span></li>
-                        <li>20GB attachment space per base</li>
-                        <li>1-year revision and snapshot history</li>
-                        <li>Rich field types including attachments, checkboxes, dropdowns, and more</li>
-                        <li>Web, desktop, iOS, and Android apps</li>
-                        <li>Realtime collaboration and commenting</li>
-                    </ul>
-                </div>
+                    <div>
+                        <p class="features">VIEWS</p>
+                        <ul>
+                            <li>Grid, calendar, form, kanban, and gallery views</li>
+                            <li>Gantt view</li>
+                            <li>Timeline view <span class="highlights">NEW</span></li>
+                            <li>20GB attachment space per base</li>
+                            <li>1-year revision and snapshot history</li>
+                            <li>Rich field types including attachments, checkboxes, dropdowns, and more</li>
+                            <li>Web, desktop, iOS, and Android apps</li>
+                            <li>Realtime collaboration and commenting</li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <p class="features">INTERFACE DESIGNER</p>
-                    <ul>
-                        <li>Streamlined ways to access airtable <span class="highlights">NEW</span></li>
-                        <li>Granular interface permissions <span class="highlights">NEW</span></li>
-                    </ul>
-                </div>
+                    <div>
+                        <p class="features">INTERFACE DESIGNER</p>
+                        <ul>
+                            <li>Streamlined ways to access airtable <span class="highlights">NEW</span></li>
+                            <li>Granular interface permissions <span class="highlights">NEW</span></li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <p class="features">EXTENSIONS</p>
-                    <ul>
-                        <li>10 per base</li>
-                    </ul>
-                </div>
+                    <div>
+                        <p class="features">EXTENSIONS</p>
+                        <ul>
+                            <li>10 per base</li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <p class="features">AUTOMATIONS</p>
-                    <ul>
-                        <li>50,000 runs per month</li>
-                        <li>1-year run history</li>
-                        <li>Automation integrations</li>
-                        <li>Jira Cloud</li>
-                    </ul>
-                </div>
+                    <div>
+                        <p class="features">AUTOMATIONS</p>
+                        <ul>
+                            <li>50,000 runs per month</li>
+                            <li>1-year run history</li>
+                            <li>Automation integrations</li>
+                            <li>Jira Cloud</li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <p class="features">SYNC</p>
-                    <ul>
-                        <li>10 synced tables per base</li>
-                        <li>Automatic sync</li>
-                        <li>Multi-source syncing</li>
-                        <li>7 sync integrations</li>
-                        <li>Jira Cloud</li>
-                    </ul>
-                </div>
+                    <div>
+                        <p class="features">SYNC</p>
+                        <ul>
+                            <li>10 synced tables per base</li>
+                            <li>Automatic sync</li>
+                            <li>Multi-source syncing</li>
+                            <li>7 sync integrations</li>
+                            <li>Jira Cloud</li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <p class="features">CUSTOMIZATION</p>
-                    <ul>
-                        <li>Custom branded forms</li>
-                        <li>Expanded color and formatting options</li>
-                        <li>Advanced calendar features</li>
-                    </ul>
-                </div>
+                    <div>
+                        <p class="features">CUSTOMIZATION</p>
+                        <ul>
+                            <li>Custom branded forms</li>
+                            <li>Expanded color and formatting options</li>
+                            <li>Advanced calendar features</li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <p class="features">EDITING & PERMISSIONS</p>
-                    <ul>
-                        <li>Password and domain restricted shares</li>
-                        <li>Field and table editing permissions</li>
-                        <li>Early access to new features</li>
-                    </ul>
-                </div>
+                    <div>
+                        <p class="features">EDITING & PERMISSIONS</p>
+                        <ul>
+                            <li>Password and domain restricted shares</li>
+                            <li>Field and table editing permissions</li>
+                            <li>Early access to new features</li>
+                        </ul>
+                    </div>
+                </div>    
             </div>
         </div>
     </div>
 </body>
 </html>
+
+
+<div class="custom-selection">
+  <select class="round" id="myselect">
+    <option>test</option>
+    <option>test2</option>
+  </select>
+</div>
