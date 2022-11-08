@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>document</title>
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="card-mediarule.css">
-    <script src="card.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="heading">
-            <p>Most Popular</p>
+            <p>Most popular</p>
         </div>
         <div class="cardblock">    
             <div class="intro">
@@ -29,12 +28,12 @@
             </div>
 
             <div>
-                <a href="https://airtable.com/signup?utm_source=pricing-pro"><button type="button" Try for free>Try for free</button></a>
+                <a href="https://airtable.com/signup?utm_source=pricing-pro"><button type="button" class="trybutton">Try for free</button></a>
             </div>
 
             <div class="description">
                 <p>Everything in <b>Plus</b>, plus:</p>
-                <p class="the-pluses">10 <a href="https://support.airtable.com/docs/airtable-extensions-overview"><span id="extensions">extensions</span></a> per base<br>
+                <p class="the-pluses">10 <a class="extensionslink" href="https://support.airtable.com/docs/airtable-extensions-overview"><span id="extensions">extensions</span></a> per base<br>
                     7 sync integrations including Jira Cloud<br>
                     50,000 records per base<br>
                     20GB of attachments per base<br>
@@ -45,11 +44,11 @@
                     Field & table editing permissions</p>
             </div>
 
-            <div class="dropdown">
-                <p class="dropdownbutton">ALL FEATURES</p>
-                
-                <div id="myDropdown" class="dropdowncontent">
-                    <div>
+            <div>
+                <button type="button" class="collapsible" id="active"></button>
+    
+                <div class="content">
+                    
                     <p class="features">FUNDAMENTALS</p>
                     <ul>
                         <li>Unlimited bases</li>
@@ -61,7 +60,7 @@
                         <li>Web, desktop, iOS, and Android apps</li>
                         <li>Realtime collaboration and commenting</li>
                     </ul>
-                    </div>
+                    
 
                     <div>
                         <p class="features">VIEWS</p>
@@ -130,17 +129,68 @@
                             <li>Early access to new features</li>
                         </ul>
                     </div>
+
+                    <div>
+                        <p class="features">SUPPORT</p>
+                        <ul>
+                            <li>On-demand webinars</li>
+                            <li>Self-serve knowledge base</li>
+                            <li>Email support</li>
+                        </ul>
+                    </div>
                 </div>    
             </div>
         </div>
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = "null";
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i ;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.className += " active";
+            var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+    </script>
+
 </body>
 </html>
-
-
-<div class="custom-selection">
-  <select class="round" id="myselect">
-    <option>test</option>
-    <option>test2</option>
-  </select>
-</div>
