@@ -174,3 +174,10 @@ h1 {
 .learn-more:hover {
     color: #194ba2;
 }
+
+@media all and (max-width: 200px) {
+    .container{
+    margin: 0px auto;
+    padding: 0.02px;
+    }
+    }   
