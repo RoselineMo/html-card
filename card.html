@@ -77,7 +77,7 @@
                     </div>
 
                     <div>
-                        <p class="features">INTERFACE DESIGNER</p>
+                        <p class="features">INTERFACE DESIGNER <a class="learn-more" href="https://www.airtable.com/product/interface-designer">Learn more</a></p>
                         <ul>
                             <li>Streamlined ways to access airtable <span class="highlights">NEW</span></li>
                             <li>Granular interface permissions <span class="highlights">NEW</span></li>
@@ -85,7 +85,7 @@
                     </div>
 
                     <div>
-                        <p class="features">EXTENSIONS</p>
+                        <p class="features">EXTENSIONS <a class="learn-more" href="https://support.airtable.com/docs/airtable-extensions-overview">Learn more</a></p>
                         <ul>
                             <li>10 per base</li>
                         </ul>
@@ -180,15 +180,16 @@
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
-        var i ;
-
-        for (i = 0; i < coll.length; i++) {
+       
+        for (var i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
-            this.className += " active";
             var current = document.getElementsByClassName("active");
+            if (current.length > 0) {
   current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
+  }
+            else {this.className += " active";
+            }
+});
 }
     </script>
 

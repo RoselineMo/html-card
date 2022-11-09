@@ -101,7 +101,9 @@ h1 {
 
 .features {
     color: #707373b8;
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
 }
 
 .highlights {
@@ -146,4 +148,29 @@ h1 {
 
 .active:after {
     content: "HIDE FEATURES \25B2";
+}
+
+.learn-more {
+    color: #4d8cf8;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin: 8px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+}
+
+.learn-more:after {
+    content: '\20D7';
+    margin: 10px 90px 0px 9px;
+    position: relative;
+    vertical-align: bottom;
+    bottom: -8px;
+    right: -7px;
+    font-size: x-large;
+}
+
+.learn-more:hover {
+    color: #194ba2;
 }
